@@ -1,11 +1,10 @@
 {
   "name": "codewithnim",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal portfolio site",
   "source": "src/index.html",
   "homepage": "https://Panther-12.github.io/codewithnim_react",
   "scripts": {
-    "start": "parcel",
     "start": "parcel",
     "build": "parcel build",
     "build-gh": "parcel build --public-url 'https://Panther-12.github.io/codewithnim_react'",

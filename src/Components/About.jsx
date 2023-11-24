@@ -24,19 +24,20 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
-
+  "studying Computer science . My vision is to leave a mark in the computing field by building a ";
+const description2 = "in the next three years. Together, we'll focus on creating solutions that have a real impact on society and instill a culture of giving back. Join me in this mission to blend technical prowess with social responsibility for a brighter future."
+const descriptionIntro = "I'm a "
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "User interfaces",
+  "Backend Architecture",
+  "Database Management",
+  "Server Configuration",
+  "API Integration",
+  "Full Stack Frameworks",
 ];
 
 /**
@@ -45,7 +46,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my web development experience I continually look for new and better ways to make tech accessible by all.";
 
 const About = () => {
   return (
@@ -60,8 +61,8 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
+        <h2>Meet Nimrod</h2>
+        <p className="large">{descriptionIntro} <span style={{ color: "#E3C567", fontWeight:"600"}}>Fullstack Engineer </span>{description}<span style={{ color: "#E3C567", fontWeight:"600"}}>community of over 500 developers </span>{description2}</p>
         <hr />
         <ul
           style={{

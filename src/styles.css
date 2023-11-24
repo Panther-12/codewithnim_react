@@ -33,10 +33,18 @@ section.padding {
   padding: 5rem 0;
 }
 
+section.padding>h2{
+  width: fit-content;
+  margin-left: 50%;
+  border-bottom: 2px solid black;
+}
+
+
 section img.background {
   height: 100%;
   left: 50%;
   object-fit: cover;
+  object-position: 10% 19%;
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -99,7 +107,8 @@ a {
 }
 
 a:hover {
-  color: #4e567e;
+  color: #D1462F;
+  border-bottom: 1px solid #D1462F;
 }
 
 .container {
@@ -117,9 +126,26 @@ a:hover {
   justify-content: flex-start;
   padding: 24px 16px;
   text-align: center;
+  transition: transform 0.4s ease-in;
 }
 
 img.socialIcon {
   height: 30px;
   width: 30px;
+}
+
+/* Style the portfolio section */
+#E-commerce platform{
+  background-color:#313715;
+  color:white;
+}
+
+.box:hover{
+  transform: scale(1.05);
+  background-color: #E3C567 ;
+}
+
+.container .box:first-child{
+  background-color:#C8963E;
+  color: white;
 }

@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microsoft/codespaces-teaching-template-js.git"
+    "url": "https://github.com/Panther-12/codewithnim_react.git"
   },
   "author": "Nimrod",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/microsoft/codespaces-teaching-template-js/issues"
+    "url": "https://github.com/Panther-12/codewithnim_react/issues"
   },
   "dependencies": {
     "react": "^18.2.0",

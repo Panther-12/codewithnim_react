@@ -1,7 +1,7 @@
 {
   "name": "codewithnim",
   "version": "1.0.0",
-  "description": "Educator JS Codespace Template",
+  "description": "Personal portfolio site",
   "source": "src/index.html",
   "homepage": "https://Panther-12.github.io/codewithnim_react",
   "scripts": {

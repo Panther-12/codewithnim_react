@@ -11,6 +11,8 @@ import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
+import Testimonials from "./Components/Testimonials";
+import Services from "./Components/Services";
 
 import "./styles.css";
 
@@ -24,15 +26,15 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-    name: "Nimrod Nyongesa",
-    title: "Fullstack Engineer",
-    email: "nimrodnyongesa7@gmail.com",
-    gitHub: "Panther-12",
-    instagram: "nimrodwalwe",
-    linkedIn: "nimrod-nyongesa-walwe",
-    medium: "@nimrodnyongesa7",
-    twitter: "@NimrodWalwe",
-    youTube: "SilentSea",
+  name: "Nimrod Nyongesa",
+  title: "Fullstack Engineer",
+  email: "nimrodnyongesa7@gmail.com",
+  gitHub: "Panther-12",
+  instagram: "nimrodwalwe",
+  linkedIn: "nimrod-nyongesa-walwe",
+  medium: "@nimrodnyongesa7",
+  twitter: "@NimrodWalwe",
+  youTube: "SilentSea",
 };
 
 const primaryColor = "#573D1C";
@@ -44,6 +46,7 @@ const App = () => {
       <Header />
       <Home name={siteProps.name} title={siteProps.title} />
       <About />
+      <Services />
       <Portfolio />
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>

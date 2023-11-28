@@ -1,7 +1,8 @@
 /**
- * Entry point of application, where App is rendered within the div with the id of "app" 
+ * Entry point of application, where App is rendered within the div with the id of "app"
  */
 
+import "bootstrap/dist/css/bootstrap.min.css";
 import React from "react";
 import { render } from "react-dom";
 

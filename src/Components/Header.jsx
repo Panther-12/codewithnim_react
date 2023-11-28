@@ -14,16 +14,20 @@ const Header = () => {
         display: "flex",
         justifyContent: "center",
         gap: "2rem",
-        background: "#E3C567 ",
-          opacity:"0.8",
+        background: "black",
+        opacity: "0.8",
         padding: "1rem",
         top: 0,
         width: "100%",
         zIndex: 10,
       }}
+      className="nav-wrapper"
     >
-      <a href="#home">Home</a>
+      <a href="#home" style={{ backgroundColor: "#C8963E" }}>
+        Home
+      </a>
       <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#portfolio">Portfolio</a>
       <a href="#footer">Contact</a>
     </div>

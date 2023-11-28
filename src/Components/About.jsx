@@ -10,7 +10,7 @@ import React from "react";
  * About background image
  *
  * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
+ * directory and import here for use. Then, set imageAltText to string that
  * represents what you see in that image.
  *
  * Need an image? Check out https://unsplash.com to download a image you
@@ -24,9 +24,10 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "studying Computer science . My vision is to leave a mark in the computing field by building a ";
-const description2 = "in the next three years. Together, we'll focus on creating solutions that have a real impact on society and instill a culture of giving back. Join me in this mission to blend technical prowess with social responsibility for a brighter future."
-const descriptionIntro = "I'm a "
+  "based in Chuka . My vision is to leave a mark in the computing field by building a ";
+const description2 =
+  "in the next three years. Together, we'll focus on creating solutions that have a real impact on society and instill a culture of giving back. Join me in this mission to blend technical prowess with social responsibility for a brighter future.";
+const descriptionIntro = "I'm a ";
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
@@ -62,7 +63,15 @@ const About = () => {
         }}
       >
         <h2>Meet Nimrod</h2>
-        <p className="large">{descriptionIntro} <span style={{ color: "#E3C567", fontWeight:"600"}}>Fullstack Engineer </span>{description}<span style={{ color: "#E3C567", fontWeight:"600"}}>community of over 500 developers </span>{description2}</p>
+        <p className="large">
+          {descriptionIntro}{" "}
+          <span style={{ color: "#E3C567", fontWeight: "600" }}>Fullstack Engineer </span>
+          {description}
+          <span style={{ color: "#E3C567", fontWeight: "600" }}>
+            community of over 500 developers{" "}
+          </span>
+          {description2}
+        </p>
         <hr />
         <ul
           style={{

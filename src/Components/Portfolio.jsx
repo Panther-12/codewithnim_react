@@ -35,35 +35,37 @@ const projectList = [
     description:
       "Laptop Finds: Affordable campus laptop marketplace with vendor-negotiable listings for students to snag the best deals.",
     url: "https://laptopfinds-ff04cf24aea5.herokuapp.com/site/",
-    skillset:["Django", "DRF", "Africastalking api", "Daraja api", "Postgresql", "Heroku"],
+    skillset: ["Django", "DRF", "Africastalking api", "Daraja api", "Postgresql", "Heroku"],
   },
   {
     title: "Twitter API intergration",
     description:
       "Twitter app with Quotel API on Rapid API platform: Generate random quotes and post directly to Twitter or Facebook.",
     url: "https://codepen.io/NimrodNyongesa/full/JjraPzw",
-    skillset:["React", "Twitter api", "Rapid api", "MongoDB"],
+    skillset: ["React", "Twitter api", "Rapid api", "MongoDB"],
   },
   {
     title: "Hotel management system",
     description:
       "Little Lemon: Restaurant app showcasing menus, managing reservations, and using Google Maps API for precise location.",
     url: "https://africancharm-eats.vercel.app/",
-    skillset:["Django", "Postgresql", "REST APIs","Vercel", "Postman"],
+    skillset: ["Django", "Postgresql", "REST APIs", "Vercel", "Postman"],
   },
   {
     title: "Music web app",
     description:
       "Music for Life: App for peer-to-peer music sharing through public rooms for collective listening joy.",
     url: "https://github.com/Panther-12/Music4Life",
-    skillset:["React", "Figma", "Spotify API", "Django", "Postgresql"],
+    skillset: ["React", "Figma", "Spotify API", "Django", "Postgresql"],
   },
 ];
 
 const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
-      <h2 style={{ textAlign: "center"}}>Portfolio</h2>
+      <div className="section-title2">
+        <h2>My Work</h2>
+      </div>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
@@ -81,7 +83,7 @@ const Portfolio = () => {
               <p className="small">{project.description}</p>
               <ul>
                 {project.skillset.map((skill) => {
-                  <li>{skill}</li>
+                  <li>{skill}</li>;
                 })}
               </ul>
             </div>

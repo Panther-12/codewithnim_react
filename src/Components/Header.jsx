@@ -28,7 +28,8 @@ const Header = () => {
       </a>
       <a href="#about">About</a>
       <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
       <a href="#footer">Contact</a>
     </div>
   );

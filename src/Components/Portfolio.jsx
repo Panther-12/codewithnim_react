@@ -70,7 +70,7 @@ const projectList = [
 
 const Portfolio = () => {
   return (
-    <section className="padding" id="portfolio">
+    <section className="padding" id="projects">
       <div className="section-title2">
         <h2>My Work</h2>
       </div>

@@ -16,7 +16,7 @@ const Certifications = () => {
         rel="stylesheet"
       />
 
-      <section class="section services-section" id="services">
+      <section class="section services-section" id="certifications">
         <div class="container-fluid .flex-row">
           <div class="row">
             <div class="col-lg-6">

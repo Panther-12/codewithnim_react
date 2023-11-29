@@ -15,7 +15,7 @@ const Services = () => {
             <div class="col-lg-6">
               <div class="section-title">
                 <h2>What I Do</h2>
-                <p>These are some of the projects i have worked on that showcase my skillset.</p>
+                <p>This is a list of services i offer as a fullstack engineer.</p>
               </div>
             </div>
           </div>

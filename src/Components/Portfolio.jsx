@@ -20,6 +20,10 @@ import React from "react";
  * freely use on your site.
  */
 import image from "../images/project_ecommerce.png";
+import laptopfinds from "../images/projects/laptopfinds.png";
+import restraurant from "../images/projects/restaurant.png";
+import music4life from "../images/projects/music4life.png";
+import twitter from "../images/projects/twitter.png";
 
 const imageAltText = "E-commerce platform exclusively dealing with laptops";
 
@@ -36,6 +40,7 @@ const projectList = [
       "Laptop Finds: Affordable campus laptop marketplace with vendor-negotiable listings for students to snag the best deals.",
     url: "https://laptopfinds-ff04cf24aea5.herokuapp.com/site/",
     skillset: ["Django", "DRF", "Africastalking api", "Daraja api", "Postgresql", "Heroku"],
+    img: laptopfinds,
   },
   {
     title: "Twitter API intergration",
@@ -43,6 +48,7 @@ const projectList = [
       "Twitter app with Quotel API on Rapid API platform: Generate random quotes and post directly to Twitter or Facebook.",
     url: "https://codepen.io/NimrodNyongesa/full/JjraPzw",
     skillset: ["React", "Twitter api", "Rapid api", "MongoDB"],
+    img: twitter,
   },
   {
     title: "Hotel management system",
@@ -50,6 +56,7 @@ const projectList = [
       "Little Lemon: Restaurant app showcasing menus, managing reservations, and using Google Maps API for precise location.",
     url: "https://africancharm-eats.vercel.app/",
     skillset: ["Django", "Postgresql", "REST APIs", "Vercel", "Postman"],
+    img: restraurant,
   },
   {
     title: "Music web app",
@@ -57,6 +64,7 @@ const projectList = [
       "Music for Life: App for peer-to-peer music sharing through public rooms for collective listening joy.",
     url: "https://github.com/Panther-12/Music4Life",
     skillset: ["React", "Figma", "Spotify API", "Django", "Postgresql"],
+    img: music4life,
   },
 ];
 
@@ -67,27 +75,20 @@ const Portfolio = () => {
         <h2>My Work</h2>
       </div>
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
-        <div style={{ maxWidth: "40%", alignSelf: "center" }}>
-          <img
-            src={image}
-            style={{ height: "90%", width: "100%", objectFit: "cover" }}
-            alt={imageAltText}
-          />
-        </div>
-        <div className="container">
-          {projectList.map((project) => (
-            <div className="box" key={project.title} id={project.title}>
-              <a href={project.url} target="_blank" rel="noopener noreferrer">
-                <h3 style={{ flexBasis: "40px" }}>{project.title}</h3>
-              </a>
-              <p className="small">{project.description}</p>
-              <ul>
-                {project.skillset.map((skill) => {
-                  <li>{skill}</li>;
-                })}
-              </ul>
-            </div>
-          ))}
+        <div className="container-fluid About-header">
+          <div className="row mb-5 po_items_ho">
+            {projectList.map((project, i) => {
+              return (
+                <div key={i} className="col-3 po_item">
+                  <img src={project.img} alt="" />
+                  <div className="content">
+                    <p>{project.description}</p>
+                    <a href={project.url} style={{ padding: "10px"}}>View project</a>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </div>
     </section>

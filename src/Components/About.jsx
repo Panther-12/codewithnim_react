@@ -16,7 +16,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/projects/mads.jpg";
 
 const imageAltText = "purple and blue abstract background";
 
@@ -62,7 +62,12 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>Meet Nimrod</h2>
+        <div className="section-title">
+          <h2>Meet Nimrod</h2>
+        </div>
+        <div class="icon" style={{padding:"20px"}}>
+           <i class="fa fa-user" style={{lineHeight:"100px", width:"100px",height:"100px", marginBotton:"22px", color:"white", background: "#573D1C", borderRadius: "50%", fontSize:"76px"}}></i>
+        </div>
         <p className="large">
           {descriptionIntro}{" "}
           <span style={{ color: "#E3C567", fontWeight: "600" }}>Fullstack Engineer </span>

@@ -13,6 +13,7 @@ import Home from "./Components/Home";
 import Portfolio from "./Components/Portfolio";
 import Testimonials from "./Components/Testimonials";
 import Services from "./Components/Services";
+import Certifications from "./Components/Certifications";
 
 import "./styles.css";
 
@@ -26,8 +27,8 @@ import "./styles.css";
  * If you don't have one of the social sites listed, leave it as an empty string.
  */
 const siteProps = {
-  name: "Nimrod Nyongesa",
-  title: "Fullstack Engineer",
+  name: "I AM NIMROD",
+  title: "FULLSTACK ENGINEER | UI & UX DESIGNER | ANDROID APP DEVELOPER ",
   email: "nimrodnyongesa7@gmail.com",
   gitHub: "Panther-12",
   instagram: "nimrodwalwe",
@@ -48,6 +49,7 @@ const App = () => {
       <About />
       <Services />
       <Portfolio />
+      <Certifications/>
       <Footer {...siteProps} primaryColor={primaryColor} secondaryColor={secondaryColor} />
     </div>
   );
